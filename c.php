@@ -97,7 +97,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("green",".");
         sleep(15);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("blue","🔓▶️ Message: ".$message);
@@ -125,7 +125,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("blue",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD260520"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("red","🔓▶️ Message: ".$message);
         echo "\n".color("yellow","🔐▶️ INI ULANG VOC 20+10");
@@ -212,7 +212,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 666123 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 123456 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"666123"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
