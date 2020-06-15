@@ -212,8 +212,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 123456 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"666123"}';
+         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
